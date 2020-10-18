@@ -1,0 +1,12 @@
+.sc-card {
+	height: 100vh;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+	.sc-container {
+		padding: 0;
+	}
+
+}
