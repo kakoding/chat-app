@@ -1,7 +1,5 @@
 # Cara Penggunaan
-
 Buat yang ingin menggunakan source code chat app ini ada beberapa hal yang perlu dilakukan terlebih dahulu ya, yuk disimak baik-baik.
-
 
 # setting rest server
 
@@ -16,6 +14,10 @@ Salin/copy file .env.example yang berada di dalam folder rest-server dan ubah na
 langkah selanjutnya melakukan database migrate
 
     php artisan migrate
+generate encryption key aplikasi web kamu
+
+    php artisan key:generate
+
 jalankan rest-servernya
 
     php artisan serve
@@ -35,6 +37,9 @@ Salin/copy file .env.example yang berada di dalam folder rest-client lalu settin
     OAUTH_SERVER_URI=isi dengan url rest-server nya ya contoh: http://127.0.0.1:8000
     OAUTH_SERVER_USERNAME=isi dengan email yang kalian buat di halaman registrasi user rest-server contoh: sesuatu@gmail.com
     OAUTH_SERVER_PASSWORD=isi dengan password yang kalian buat di halaman registrasi user rest-server contoh: sebuahapelyangjatuh
+generate encryption key aplikasi web kamu
+
+    php artisan key:generate
 sekarang tinggal dirunning aja deh
 
     php artisan serve --port=8001
