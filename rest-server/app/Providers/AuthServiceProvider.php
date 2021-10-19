@@ -31,9 +31,9 @@ class AuthServiceProvider extends ServiceProvider
         Passport::routes();
 
         // access token kita atur expirednya menjadi 1 jam 
-        Passport::tokensExpireIn(now()->addHours(1));
+        // Passport::tokensExpireIn(now()->addHours(1));
 
         // sedangkan refresh token kita atur expirednya menjadi 70 menit
-        Passport::refreshTokensExpireIn(now()->addMinutes(70));
+        // Passport::refreshTokensExpireIn(now()->addMinutes(70));
     }
 }

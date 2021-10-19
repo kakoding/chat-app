@@ -11,7 +11,7 @@
                   <div class="card-header">
                     <div class="row">
                       <div class="col align-self-center text-center">
-                        <h5>Registration</h5>
+                        <h5>Sign Up</h5>
                       </div> 
                     </div>
                   </div>
@@ -38,8 +38,8 @@
                         <input type="password" class="form-control @if(session('msg_password')) is-invalid @endif" id="exampleInputPassword1" name="password">
                         @if(session('msg_password'))<div class="invalid-feedback">{{ session('msg_password') }}</div>@endif
                       </div>
-                      <button type="submit" class="btn btn-primary mb-3">Register</button>
-                      <p>Have an account? <a href="#">Log In</a></p>
+                      <button type="submit" class="btn btn-primary mb-3">Sign up</button>
+                      <p>Have an account? <a href="{{ url('/signin') }}">Sign in</a></p>
                     </form>
                   </div>
                   </div>

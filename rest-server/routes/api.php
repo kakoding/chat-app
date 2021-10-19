@@ -3,6 +3,7 @@
 // use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\SignUpController;
+use App\Http\Controllers\API\SignInController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,5 @@ use App\Http\Controllers\API\SignUpController;
 
 Route::middleware('auth:api')->group( function () {
 	Route::post('/signup', [SignUpController::class, 'signup']);
+	Route::get('/signin', [SignInController::class, 'signin']);
 });
