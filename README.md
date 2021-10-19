@@ -20,7 +20,7 @@ generate encryption key aplikasi web kamu
 
 membuat sebuah password grant client untuk mendapatkan client id dan clien secret di database
 
-    php artisan passport:client --password
+    php artisan passport:install
 
 jalankan rest-servernya
 
