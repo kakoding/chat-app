@@ -1,7 +1,7 @@
 # Cara Penggunaan
 Buat yang ingin menggunakan source code chat app ini ada beberapa hal yang perlu dilakukan terlebih dahulu ya, yuk disimak baik-baik.
 
-# setting rest server
+# Setting rest-server
 
 Pastikan command prompt/terminal kalian berada di posisi didalam folder rest-server ya. Kemudian lakukan composer install:
 
@@ -18,12 +18,16 @@ generate encryption key aplikasi web kamu
 
     php artisan key:generate
 
+membuat sebuah password grant client untuk mendapatkan client id dan clien secret di database
+
+    php artisan passport:client --password
+
 jalankan rest-servernya
 
     php artisan serve
 maka secara default akan dijalankan di alamat http://127.0.0.1:8000 yang nantinya akan kita gunakan untuk membuat email dan password untuk mensetting oauth rest client nya
 
-## setting rest client
+# Setting rest-client
 
 pastikan command prompt/terminal kalian berada di posisi didalam folder rest-client ya lalu lakukan composer install
 
